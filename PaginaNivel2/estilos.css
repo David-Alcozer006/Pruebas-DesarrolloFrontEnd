@@ -1,0 +1,661 @@
+/* Estilos Globales */
+
+/* Colores */
+/* Textos y fuentes */
+/* Margenes y Bordes */
+:root {
+
+    --color-primary: #1a2456;
+    --color-secondary: #efc2b3;
+
+
+    --color-white: #ffffff;
+    --color-gray: #6c757d;
+    --color-gray-dark: #343a40;
+
+    --color-blue: #1a2456;
+    --color-indigo: #1a2456;
+
+    /* Escala de Rosas */
+    --color-rosa: #ff8d6b;
+    ---color-orange: #ff8d6b;
+
+
+    --font-sans: 'Prompt', sans-serif;
+    --font-mono: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
+    /* margenes */
+    --padding-seccion: 15%;
+
+}
+
+body {
+    background-color: #f0efed;
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    font-weight: 300;
+    line-height: var(--line-height-base);
+    text-align: left;
+
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heaeder */
+
+.header {
+    height: 80px;
+    width: 100%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    padding: 10px 20px;
+}
+
+.Cont_Header {
+    background-color: var(--color-indigo);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo_Marca {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.Menu {
+    display: none;
+    font-size: 26px;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.Marca {
+    color: var(--color-secondary);
+    font-size: large;
+    font: 500;
+}
+
+.Logo {
+    height: 100%;
+    width: auto;
+}
+
+.Marca:hover {
+    color: var(---color-orange);
+}
+
+.Lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.Item {
+    padding: 0.75rem 10px;
+    color: var(--color-secondary);
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Item:hover {
+    color: var(---color-orange);
+}
+
+.Compra_CambioMoneda {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    gap: 15px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.Item_CambioMoneda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+}
+
+.Item_CambioMoneda:hover {
+    color: var(--color-gray)
+}
+
+.icon_usd {
+    width: 12px;
+    height: 12px;
+    background-image: url("Imagenes/drop_arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+/* Hover */
+.Item_CambioMoneda:hover {
+    color: var(--color-gray);
+}
+
+.Item_CambioMoneda:hover .icon_usd {
+    background-image: url("Imagenes/drop_arrow_2.png");
+}
+
+@media (max-width: 1100px) {
+
+    .Lista .Item {
+        display: none;
+    }
+    .Menu {
+        display: block;
+    }
+    .Compra_CambioMoneda {
+        display: flex;
+    }
+
+}
+
+/* FOOTER */
+footer {
+    height: 350px;
+    width: auto;
+    padding: 50px var(--padding-seccion);
+    background-color: var(--color-indigo);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cont_footer {
+    height: auto;
+    width: 18%;
+    display: inline-flex;
+    flex-direction: column
+}
+
+/* estilos */
+
+.cont_footer h1,
+.cont_footer h2,
+.cont_footer h3,
+.cont_footer_suscribe h1 {
+    color: var(--color-secondary);
+    padding-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.Lista_Footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.Item_Footer {
+    color: var(--color-secondary);
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.Item_Footer:hover {
+    color: var(---color-orange);
+    text-decoration: underline;
+
+}
+
+/* contenedor formulario de suscripcion */
+.cont_footer_suscribe {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont_footer_suscribe>h1 {
+    color: var(--color-secondary);
+}
+
+.cont_footer_suscribe>h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    color: var(--color-secondary);
+    font-size: 13px;
+}
+
+.cont_form_suscribe {
+    height: 20%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    padding-right: 10px;
+    padding: 10 0px;
+}
+
+/* imput */
+.email-input {
+    height: 40px;
+    background: transparent;
+    border: 2px solid #d9c2c2;
+    padding: 0px 16px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: #aab0c0;
+}
+
+.submit-btn {
+    height: 40px;
+    background: var(--color-secondary);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    color: var(--color-gray);
+}
+
+.cont_redes_sociales {
+    height: 15%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d2656;
+    text-decoration: none;
+}
+
+.icon svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+@media (max-width: 900px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "mono sus"
+            "quick help"
+            "info info";
+
+        height: auto;
+        gap: 20px;
+    }
+
+    /* Areas designadas del footer */
+    footer .cont_footer:nth-child(1) {
+        grid-area: mono;
+    }
+
+    footer .cont_footer:nth-child(2) {
+        grid-area: quick;
+    }
+
+    footer .cont_footer:nth-child(3) {
+        grid-area: help;
+    }
+
+    footer .cont_footer:nth-child(4) {
+        grid-area: info;
+    }
+
+    footer .cont_footer_suscribe {
+        grid-area: sus;
+    }
+
+}
+
+/* Seccion de bienvenida */
+.sec_bienvenida {
+    position: relative;
+    height: 50rem;
+    width: 100%;
+    background-image: url("Imagenes/Mandos_VideoJuegos.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Contenido */
+.contenido {
+    position: relative;
+    text-align: center;
+    color: #e6bfb4;
+    z-index: 2;
+}
+
+.contenido h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.contenido p {
+    color: #ddd;
+}
+
+.flecha {
+    position: absolute;
+    bottom: 25px;
+    z-index: 2;
+}
+
+.icon_flecha {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("Imagenes/arrow_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon_flecha:hover {
+    transform: scale(1.2);
+}
+
+
+/* /////////////////////////////////// */
+/* Seccion de productos cartas y seccion*/
+.Sec_Productos {
+    padding: 60px var(--padding-seccion);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Grupo_Pares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.Grupo_Terceas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Grupo_LG {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+@media (max-width: 900px) {
+    .Grupo_Pares {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Grupo_Terceas {
+        grid-template-columns: 2fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .Grupo_Terceas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .Grupo_LG {
+        grid-template-columns: 1fr;
+    }
+}
+
+.Card_Productos {
+    background: #f2f2f2;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Cont_Imagen_Carta {
+    position: relative;
+    background: var(--color-gray);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.Cont_Imagen_Carta_Lg {
+    position: relative;
+    background: var(--color-gray);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-image: url(Imagenes/Producto1.png); */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.Cont_Imagen_Carta img,
+.Cont_Imagen_Carta_Lg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background: var(---color-orange);
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.Cont_TituloEstatus_Carta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+/* animacion del precio y boton */
+
+.Precio_Boton {
+    position: relative;
+    display: inline-block;
+}
+
+.precio {
+    transition: opacity 0.3s ease;
+    padding: 8px 16px;
+}
+
+.btn-hover {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+
+    background: var(--color-primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+
+    width: 100px;
+    height: 30px;
+}
+
+.Precio_Boton:hover .precio {
+    opacity: 0;
+}
+
+.Precio_Boton:hover .btn-hover {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Estilos de las cartas */
+.Cont_TituloEstatus_Carta h6 {
+    color: var(--color-blue);
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.Cont_TituloEstatus_Carta h5 {
+    color: var(--color-blue);
+    font-size: medium;
+    font-weight: 500;
+}
+
+.Cont_TituloEstatus_Carta h4 {
+    color: var(--color-primary);
+    font-size: x-large;
+    font-weight: bold;
+    /* TODO COlocar un espaciado mas grande entre las tipografias entre letras y palabras */
+}
+
+.Cont_Desc_Carta {
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Seccion de anuncio */
+.sec_anuncio {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    background-image: url("Imagenes/anuncio.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay_anuncio {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.322);
+    display: flex;
+}
+
+/* Contenido */
+.contenido_anuncio {
+    position: relative;
+    text-align: center;
+    color: var(--color-primary);
+    z-index: 2;
+}
+
+.contenido_anuncio h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.contenido_anuncio p {
+    color: var(--color-indigo);
+}

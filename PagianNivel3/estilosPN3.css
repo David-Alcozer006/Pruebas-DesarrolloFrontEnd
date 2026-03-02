@@ -1,0 +1,1286 @@
+/* Estilos Globales */
+
+/* Colores */
+/* Textos y fuentes */
+/* Margenes y Bordes */
+:root {
+
+    --color-primary: #e60012;
+    --color-primary-hover: #ac000d;
+    --color-secondary: #efefef;
+
+
+    --color-white: #ffffff;
+    --color-gray: #434242;
+    --color-gray-dark: #343a40;
+
+    --color-blue: #d6f0fa;
+    --color-navy_blue: #0b2b6b;
+
+    --font-sans: "Geologica Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+
+
+    /* margenes */
+    --padding-seccion: 15%;
+    --padding-mg-seccion: 20%
+}
+
+body {
+    background-color: #f0efed;
+    color: var(--color-gray);
+    font-family: var(--font-sans);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_header {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* logo */
+.logo {
+    height: 100%;
+    width: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-image: url(Recursos/Imagenes/nintendo-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* listas */
+.lista_izq {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 15px;
+}
+
+.lista_der {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    padding-right: 15px;
+}
+
+.item_header {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.item_header img {
+    height: 20px;
+    width: auto;
+}
+
+.item_header h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item_header h2 {
+    font-size: 14px;
+    font-weight: 550;
+}
+.item_header h1:hover{
+    color:var(--color-primary);
+}
+
+
+.login_btn {
+    padding: 6px 14px;
+    border: 1px solid #e60012;
+    border-radius: 20px;
+    color: #e60012;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cont_info {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #f2f2f2;
+}
+
+.delivery,
+.platinum_points {
+    width: auto;
+    height: auto;
+}
+
+
+.delivery .item_header,
+.platinum_points .item_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont_info::before {
+    content: "";
+    width: 1px;
+    height: 25px;
+    background-color: #cfcfcf;
+    position: absolute;
+}
+
+.cont_info {
+    position: relative;
+}
+
+.delivery {
+    margin-right: 20px;
+}
+
+.platinum_points {
+    margin-left: 20px;
+}
+
+.delivery::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    width: 1px;
+    height: 25px;
+    background-color: #cfcfcf;
+}
+
+/* Seccion del producto */
+
+.Sec_producto {
+    height: 700px;
+    width: 100%;
+    background-color: #d6f0fa;
+    padding: 0px var(--padding-seccion);
+    padding-top: 50px;
+}
+
+.Card_Producto {
+    /* este la posicion sera relative o por ensima */
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 20px 30px;
+
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.Card_ubicacion {
+    width: 100%;
+    gap: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.Card_ubicacion h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+
+.Card_ubicacion .Card_ubicacion_activo {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.Card_contenido {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-white);
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 40px;
+}
+
+.Card_imgYinf {
+    height: 100%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: transparent;
+}
+
+/* Componetes carrucel y informacion */
+
+.Card_carrusel {
+    height: 60%;
+    width: 100%;
+}
+
+.Card_carrusel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    box-shadow: #343a40;
+}
+
+/* Carrusel pequeño con scroll horizontal */
+.Card_carrusel_pequeno {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    /* Ocultar barra de navegación */
+    /* scrollbar-width: none; */
+    /* -ms-overflow-style: none; */
+}
+
+.Card_carrusel_pequeno::-webkit-scrollbar {
+    display: none;
+}
+
+.Card_item_cp {
+    flex: 0 0 auto;
+    height: 80%;
+    width: 15%;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    scroll-snap-align: start;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card_item_cp:hover {
+    opacity: 1;
+}
+
+.Card_item_cp img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Card__cont_restricion_edad {
+    height: auto;
+    min-height: 15%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.Card_restricion_inf {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Card_restrion_edad {
+    height: 100%;
+    width: 12%;
+    display: flex;
+    padding: 10px 0px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Card_restrion_edad img {
+    height: 80px;
+    width: 80px;
+}
+
+.Card_restricion_inf h3 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.4;
+}
+
+.Card_restricion_users {
+    margin-top: 5px;
+    font-weight: 500 !important;
+    color: #111 !important;
+}
+
+.Card_Cont_certificado {
+    height: auto;
+    min-height: 14%;
+    width: 100%;
+    padding: 5px 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.Card_certificado {
+    height: 80%;
+    width: 100%;
+    background-color: #e3f0ff;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    gap: 10px;
+    padding: 12px 15px;
+}
+
+.Card_certificado img {
+    height: 20px;
+    width: 20px;
+}
+
+.Card_certificado_inf {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    justify-content: center;
+    align-items: start;
+}
+
+.Card_certificado_inf h1 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0b2b6b;
+}
+
+
+.Card_certificado_inf h2 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* componentes de compra de la carta */
+.Card_compra {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+    background-color: var(--color-white);
+}
+
+.Card_compra_titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.Card_compra_subtitulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.Card_compra_version {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.Card_version_item {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.Card_version_item:nth-child(1),
+.Card_version_item:nth-child(2) {
+    grid-column: span 1;
+}
+
+.Card_version_item:nth-child(3) {
+    grid-column: 1 / 2;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 0;
+}
+
+.Card_version_item:hover {
+    background-color: #eeeeee;
+    border-color: #ccc;
+}
+
+/* Estilo para item activo */
+.Card_version_item--activo {
+    border-color: var(--color-primary);
+    background-color: #fff0f0;
+}
+
+/* Estilo para items no activos (opcional - más tenue) */
+.Card_version_item:not(.Card_version_item--activo) {
+    opacity: 0.9;
+}
+
+.Card_version_item:not(.Card_version_item--activo) .Card_version_nombre {
+    color: #666;
+}
+
+.Card_version_icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Estilos específicos para los íconos */
+.Card_version_item--activo .Card_version_icon {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(96%) saturate(7483%) hue-rotate(357deg) brightness(97%) contrast(116%); /* Rojo para el checkmark */
+}
+
+.Card_version_item:not(.Card_version_item--activo) .Card_version_icon {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0.9) contrast(1); /* Gris para el círculo */
+}
+
+.Card_version_nombre {
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.2;
+}
+/* Upgrade pack link */
+.Card_compra_upgrade {
+    font-size: 12px;
+    color: var(--color-primary);
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+}
+
+.Card_compra_upgrade:hover {
+    opacity: 0.8;
+}
+
+/* Edición tag */
+.Card_compra_edicion {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.Card_edicion_tag {
+    display: inline-block;
+    padding: 4px 0;
+    font-size: 14px;
+    color: #333;
+    background: none;
+    border: none;
+}
+
+/* Precio */
+.Card_compra_precio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.Card_precio_actual {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* Botón de compra */
+.Card_compra_boton {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.Card_btn_compra {
+    width: 100%;
+    padding: 14px 0;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.Card_btn_compra:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.Card_btn_compra img {
+    filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+}
+
+.Card_compra_nota {
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Ajustes de íconos según reglas */
+.Card_restrion_edad img {
+    height: 80%;
+    width: 80%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.Card_certificado img {
+    height: 20px;
+    width: 20px;
+}
+
+.Card_like_container img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Seccion de informacion del juego */
+.Sec_informacion {
+    height: 700px;
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 0px var(--padding-mg-seccion);
+    padding-top: 50px;
+}
+
+.Info_contenedor {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.Info_texto {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.Info_texto h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Info_texto p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-gray);
+}
+
+.Info_readmore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.Info_readmore img {
+    width: 18px;
+    height: 18px;
+}
+
+.Info_texto h4 {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.Info_boton {
+    width: fit-content;
+    padding: 16px 30px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+.Info_boton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.Info_boton h3 {
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.Info_imagen {
+    width: 50%;
+    height: 350px;
+}
+
+.Info_imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* Seccion de tags */
+
+.Sec_tags {
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 60px var(--padding-mg-seccion);
+}
+
+.Tags_contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Tags_titulo h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Tags_lista {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.Tag_item {
+    padding: 10px 18px;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tag_item h3 {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.Tag_item h3:hover {
+    color: var(--color-primary);
+}
+
+/* Sección About */
+
+.Sec_about {
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding: 60px var(--padding-mg-seccion);
+}
+
+.About_contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    /* sangría izquierda */
+}
+
+/* Título */
+
+.About_titulo {
+    margin-bottom: 20px;
+}
+
+.About_titulo h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* ITEM tipo tabla */
+
+.About_item {
+    width: 100%;
+    display: flex;
+    padding: 28px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Quitar línea al primer item */
+.About_item:first-of-type {
+    border-top: none;
+}
+
+.About_label {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.About_icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.About_label h3 {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.About_value {
+    width: 68%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.About_value_column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.About_value p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.About_value a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.About_links {
+    display: flex;
+    gap: 20px;
+}
+
+.About_small {
+    font-size: 12px;
+    opacity: 0.9;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Supported play modes */
+
+.About_modes {
+    display: flex;
+    gap: 50px;
+}
+
+.About_mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.About_mode img {
+    width: 32px;
+    height: 32px;
+}
+
+.About_mode h4 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.About_small p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-gray);
+}
+
+/* ESRB */
+
+.About_esrb {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+}
+
+.About_esrb_img {
+    width: 45px;
+    height: auto;
+}
+
+.About_esrb_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.About_esrb_text p:first-child {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000;
+}
+
+/* About Number of Players */
+
+.About_players {
+    width: 100%;
+    padding: 50px 0;
+    border-top: 1px solid #e0e0e0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.About_players h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.About_players p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* card de los videojuegos*/
+
+.Sec_Card_Videojuegos {
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding: 80px var(--padding-mg-seccion);
+}
+
+.CardVideojuegos_contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.CardVideojuegos_titulo h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.CardVideojuegos_lista {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.CardVideojuegos_card {
+    width: 260px;
+    height: 500px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.CardVideojuegos_card:hover h2 {
+    color: var(--color-primary);
+
+}
+
+.CardVideojuegos_card:hover img {
+    transform: scale(1.08);
+}
+
+.CardVideojuegos_img {
+    width: 100%;
+    height: 50%;
+}
+
+.CardVideojuegos_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+
+.CardVideojuegos_info {
+    width: 100%;
+    height: 50%;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.CardVideojuegos_nom_fech {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+
+.CardVideojuegos_precio_like {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 5px;
+}
+
+.CardVideojuegos_info h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.CardVideojuegos_info h4 {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.CardVideojuegos_fechaOferta {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.CardVideojuegos_sale {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    width: fit-content;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.CardVideojuegos_precio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CardVideojuegos_precio h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.CardVideojuegos_precio_old {
+    text-decoration: line-through;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.CardVideojuegos_descuento {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.CardVideojuegos_footer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CardVideojuegos_categoria {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 6px;
+}
+
+.CardVideojuegos_categoria img,
+.CardVideojuegos_like img {
+    width: 20px;
+    height: 20px;
+}
+
+.CardVideojuegos_categoria h5 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.CardVideojuegos_legal {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.CardVideojuegos_legal p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--color-gray);
+    opacity: 0.75;
+}
+
+
+/* Footer */
+.Sec_Footer_Videojuegos {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+/* Franja roja */
+.Footer_TopBar {
+    background-color: #e60012;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer_Logo {
+    height: 100px;
+}
+
+/* Contenedor principal */
+.Cont_Footer_Videojuegos {
+    height: 600px;
+    padding: 50px var(--padding-seccion);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Columnas */
+.Footer_Columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Footer_Column {
+    min-width: 180px;
+    flex: 1;
+}
+
+.Foter_ColumnPares {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Footer_Title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.Footer_List {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Footer_List li {
+    margin-bottom: 8px;
+}
+
+.Footer_List a{
+    text-decoration: none;
+    color: #e60012;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+.Footer_List a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+
+    transition: width 0.3s ease;
+}
+
+.Footer_List a:hover::after{
+    width: 100%;
+}
+
+/* Redes + ESRB */
+.Footer_Bottom_Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer_Social {
+    display: flex;
+    gap: 20px;
+}
+
+.Footer_Icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.Footer_ESRB_Icon {
+    width: 60px;
+    height: 80px;
+    cursor: pointer;
+}
+
+/* Barra legal */
+.Footer_Legal {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 10px 12%;
+}
+
+.Cont_Footer_Legal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.Footer_Links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Footer_Links a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+}
+
+.Footer_Links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+
+    transition: width 0.3s ease;
+}
+
+.Footer_Links a:hover::after{
+    width: 100%;
+}
+.Footer_Language {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.Footer_Legal_Icon {
+    height: 25px;
+    width: 30px;
+
+    border-radius: 10px;
+
+}
