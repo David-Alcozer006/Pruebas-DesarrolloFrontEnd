@@ -2,7 +2,8 @@
 
 /* Colores */
 /* Textos y fuentes */
-/* Margenes y Bordes */
+/* Márgenes y Bordes */
+
 :root {
 
     --color-primary: #1a2456;
@@ -25,7 +26,7 @@
     --font-mono: SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
 
-    /* margenes */
+    /* márgenes */
     --padding-seccion: 15%;
 
 }
@@ -170,6 +171,7 @@ body {
 }
 
 /* Hover */
+
 .Item_CambioMoneda:hover {
     color: var(--color-gray);
 }
@@ -248,7 +250,8 @@ footer {
 
 }
 
-/* contenedor formulario de suscripcion */
+/* contenedor formulario de suscripción */
+
 .cont_footer_suscribe {
     height: auto;
     width: auto;
@@ -279,7 +282,8 @@ footer {
     padding: 10 0px;
 }
 
-/* imput */
+/* input */
+
 .email-input {
     height: 40px;
     background: transparent;
@@ -348,12 +352,12 @@ footer {
             "mono sus"
             "quick help"
             "info info";
-
         height: auto;
         gap: 20px;
     }
+    
+    /* lugares designados del footer */
 
-    /* Areas designadas del footer */
     footer .cont_footer:nth-child(1) {
         grid-area: mono;
     }
@@ -376,10 +380,11 @@ footer {
 
 }
 
-/* Seccion de bienvenida */
+/* Sección de bienvenida */
+
 .sec_bienvenida {
     position: relative;
-    height: 50rem;
+    height: 800px;
     width: 100%;
     background-image: url("Imagenes/Mandos_VideoJuegos.jpg");
     background-size: cover;
@@ -397,6 +402,7 @@ footer {
 }
 
 /* Contenido */
+
 .contenido {
     position: relative;
     text-align: center;
@@ -439,9 +445,9 @@ footer {
     transform: scale(1.2);
 }
 
-
 /* /////////////////////////////////// */
-/* Seccion de productos cartas y seccion*/
+/* Sección de productos cartas y sección*/
+
 .Sec_Productos {
     padding: 60px var(--padding-seccion);
     display: flex;
@@ -552,7 +558,7 @@ footer {
     padding-top: 10px;
 }
 
-/* animacion del precio y boton */
+/* animación del precio y botón */
 
 .Precio_Boton {
     position: relative;
@@ -597,6 +603,7 @@ footer {
 }
 
 /* Estilos de las cartas */
+
 .Cont_TituloEstatus_Carta h6 {
     color: var(--color-blue);
     font-size: medium;
@@ -613,7 +620,9 @@ footer {
     color: var(--color-primary);
     font-size: x-large;
     font-weight: bold;
-    /* TODO COlocar un espaciado mas grande entre las tipografias entre letras y palabras */
+
+    /* TODO colocar un espaciado mas grande entre las tipografías entre letras y palabras */
+
 }
 
 .Cont_Desc_Carta {
@@ -621,10 +630,11 @@ footer {
     font-size: 14px;
 }
 
-/* Seccion de anuncio */
+/* Sección de anuncio */
+
 .sec_anuncio {
     position: relative;
-    height: 35rem;
+    height: 550px;
     width: 100%;
     background-image: url("Imagenes/anuncio.jpg");
     background-size: cover;
@@ -643,6 +653,7 @@ footer {
 }
 
 /* Contenido */
+
 .contenido_anuncio {
     position: relative;
     text-align: center;
