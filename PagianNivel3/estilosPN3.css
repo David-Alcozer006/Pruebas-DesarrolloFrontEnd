@@ -52,7 +52,7 @@ body {
     flex-direction: column;
 }
 
-.cont_header {
+.header-container {
     width: 100%;
     height: 50%;
     display: flex;
@@ -75,7 +75,7 @@ body {
 }
 
 /* listas */
-.lista_izq {
+.left-list {
     width: 48%;
     height: 100%;
     display: flex;
@@ -84,7 +84,7 @@ body {
     padding-left: 15px;
 }
 
-.lista_der {
+.right-list {
     width: 45%;
     height: 100%;
     display: flex;
@@ -94,7 +94,7 @@ body {
     padding-right: 15px;
 }
 
-.item_header {
+.header-item {
     width: auto;
     height: auto;
     display: flex;
@@ -102,26 +102,26 @@ body {
     gap: 8px;
 }
 
-.item_header img {
+.header-item img {
     height: 20px;
     width: auto;
 }
 
-.item_header h1 {
+.header-item h1 {
     font-size: 14px;
     font-weight: 600;
 }
 
-.item_header h2 {
+.header-item h2 {
     font-size: 14px;
     font-weight: 550;
 }
-.item_header h1:hover{
+.header-item h1:hover{
     color:var(--color-primary);
 }
 
 
-.login_btn {
+.login-btn {
     padding: 6px 14px;
     border: 1px solid #e60012;
     border-radius: 20px;
@@ -130,7 +130,7 @@ body {
     font-size: 14px;
 }
 
-.cont_info {
+.info-container {
     width: 100%;
     height: 50%;
     display: flex;
@@ -141,20 +141,20 @@ body {
 }
 
 .delivery,
-.platinum_points {
+.platinum-points {
     width: auto;
     height: auto;
 }
 
 
-.delivery .item_header,
-.platinum_points .item_header {
+.delivery .header-item,
+.platinum-points .header-item {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.cont_info::before {
+.info-container::before {
     content: "";
     width: 1px;
     height: 25px;
@@ -162,7 +162,7 @@ body {
     position: absolute;
 }
 
-.cont_info {
+.info-container {
     position: relative;
 }
 
@@ -170,7 +170,7 @@ body {
     margin-right: 20px;
 }
 
-.platinum_points {
+.platinum-points {
     margin-left: 20px;
 }
 
@@ -185,7 +185,7 @@ body {
 
 /* Sección del producto */
 
-.Sec_producto {
+.product-section {
     height: 700px;
     width: 100%;
     background-color: #d6f0fa;
@@ -193,7 +193,7 @@ body {
     padding-top: 50px;
 }
 
-.Card_Producto {
+.product-card {
     
     /* este la posición será relativa */
     
@@ -208,7 +208,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.Card_ubicacion {
+.breadcrumb {
     width: 100%;
     gap: 15px;
 
@@ -220,18 +220,18 @@ body {
     font-weight: 400;
 }
 
-.Card_ubicacion h3 {
+.breadcrumb h3 {
     font-size: 12px;
     font-weight: 400;
     color: #666;
 }
 
-.Card_ubicacion .Card_ubicacion_activo {
+.breadcrumb .breadcrumb-active {
     color: var(--color-primary);
     font-weight: 500;
 }
 
-.Card_contenido {
+.card-content {
     height: 100%;
     width: 100%;
     background-color: var(--color-white);
@@ -242,7 +242,7 @@ body {
     gap: 40px;
 }
 
-.Card_imgYinf {
+.card-image-info {
     height: 100%;
     width: 60%;
 
@@ -255,12 +255,12 @@ body {
 
 /* Componentes carrusel y información */
 
-.Card_carrusel {
+.carousel {
     height: 60%;
     width: 100%;
 }
 
-.Card_carrusel img {
+.carousel img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -269,7 +269,7 @@ body {
 
 /* Carrusel pequeño con scroll horizontal */
 
-.Card_carrusel_pequeno {
+.small-carousel {
     height: 20%;
     width: 100%;
     display: flex;
@@ -286,11 +286,11 @@ body {
 
 }
 
-.Card_carrusel_pequeno::-webkit-scrollbar {
+.small-carousel::-webkit-scrollbar {
     display: none;
 }
 
-.Card_item_cp {
+.carousel-item {
     flex: 0 0 auto;
     height: 80%;
     width: 15%;
@@ -304,17 +304,17 @@ body {
     justify-content: center;
 }
 
-.Card_item_cp:hover {
+.carousel-item:hover {
     opacity: 1;
 }
 
-.Card_item_cp img {
+.carousel-item img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
 }
 
-.Card__cont_restricion_edad {
+.age-restriction-container {
     height: auto;
     min-height: 15%;
     width: 100%;
@@ -325,7 +325,7 @@ body {
 
 }
 
-.Card_restricion_inf {
+.age-info {
     height: 100%;
     width: 55%;
     display: flex;
@@ -336,7 +336,7 @@ body {
     gap: 5px;
 }
 
-.Card_restrion_edad {
+.age-rating {
     height: 100%;
     width: 12%;
     display: flex;
@@ -347,25 +347,25 @@ body {
 
 }
 
-.Card_restrion_edad img {
+.age-rating img {
     height: 80px;
     width: 80px;
 }
 
-.Card_restricion_inf h3 {
+.age-info h3 {
     font-size: 11px;
     font-weight: 400;
     color: #333;
     line-height: 1.4;
 }
 
-.Card_restricion_users {
+.age-users {
     margin-top: 5px;
     font-weight: 500 !important;
     color: #111 !important;
 }
 
-.Card_Cont_certificado {
+.certificate-container {
     height: auto;
     min-height: 14%;
     width: 100%;
@@ -377,7 +377,7 @@ body {
     justify-content: center;
 }
 
-.Card_certificado {
+.certificate {
     height: 80%;
     width: 100%;
     background-color: #e3f0ff;
@@ -392,12 +392,12 @@ body {
     padding: 12px 15px;
 }
 
-.Card_certificado img {
+.certificate img {
     height: 20px;
     width: 20px;
 }
 
-.Card_certificado_inf {
+.certificate-info {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -407,14 +407,14 @@ body {
     align-items: start;
 }
 
-.Card_certificado_inf h1 {
+.certificate-info h1 {
     font-size: 12px;
     font-weight: 700;
     color: #0b2b6b;
 }
 
 
-.Card_certificado_inf h2 {
+.certificate-info h2 {
     font-size: 11px;
     font-weight: 400;
     color: #333;
@@ -422,7 +422,7 @@ body {
 
 /* componentes de compra de la carta */
 
-.Card_compra {
+.purchase-section {
     height: 100%;
     width: 40%;
 
@@ -436,21 +436,21 @@ body {
     background-color: var(--color-white);
 }
 
-.Card_compra_titulo {
+.purchase-title {
     font-size: 28px;
     font-weight: 700;
     color: #111;
     margin-bottom: 5px;
 }
 
-.Card_compra_subtitulo {
+.purchase-subtitle {
     font-size: 14px;
     font-weight: 500;
     color: #333;
     margin: 10px 0 5px 0;
 }
 
-.Card_compra_version {
+.version-options {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -458,7 +458,7 @@ body {
     margin: 10px 0;
 }
 
-.Card_version_item {
+.version-item {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -472,41 +472,41 @@ body {
     text-align: center;
 }
 
-.Card_version_item:nth-child(1),
-.Card_version_item:nth-child(2) {
+.version-item:nth-child(1),
+.version-item:nth-child(2) {
     grid-column: span 1;
 }
 
-.Card_version_item:nth-child(3) {
+.version-item:nth-child(3) {
     grid-column: 1 / 2;
     justify-content: flex-start;
     max-width: 100%;
     margin: 0;
 }
 
-.Card_version_item:hover {
+.version-item:hover {
     background-color: #eeeeee;
     border-color: #ccc;
 }
 
 /* Estilo para ítems activo */
 
-.Card_version_item--activo {
+.version-item--active {
     border-color: var(--color-primary);
     background-color: #fff0f0;
 }
 
 /* Estilo para ítems no activos (opcional - más tenue) */
 
-.Card_version_item:not(.Card_version_item--activo) {
+.version-item:not(.version-item--active) {
     opacity: 0.9;
 }
 
-.Card_version_item:not(.Card_version_item--activo) .Card_version_nombre {
+.version-item:not(.version-item--active) .version-name {
     color: #666;
 }
 
-.Card_version_icon {
+.version-icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
@@ -514,15 +514,15 @@ body {
 
 /* Estilos específicos para los íconos */
 
-.Card_version_item--activo .Card_version_icon {
+.version-item--active .version-icon {
     filter: brightness(0) saturate(100%) invert(16%) sepia(96%) saturate(7483%) hue-rotate(357deg) brightness(97%) contrast(116%); /* Rojo para el checkmark */
 }
 
-.Card_version_item:not(.Card_version_item--activo) .Card_version_icon {
+.version-item:not(.version-item--active) .version-icon {
     filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0.9) contrast(1); /* Gris para el círculo */
 }
 
-.Card_version_nombre {
+.version-name {
     font-size: 13px;
     font-weight: 500;
     color: #222;
@@ -531,7 +531,7 @@ body {
 
 /* Upgrade pack link */
 
-.Card_compra_upgrade {
+.upgrade-link {
     font-size: 12px;
     color: var(--color-primary);
     cursor: pointer;
@@ -540,18 +540,18 @@ body {
     font-weight: 400;
 }
 
-.Card_compra_upgrade:hover {
+.upgrade-link:hover {
     opacity: 0.8;
 }
 
 /* Edición tag */
 
-.Card_compra_edicion {
+.edition-section {
     width: 100%;
     margin: 5px 0;
 }
 
-.Card_edicion_tag {
+.edition-tag {
     display: inline-block;
     padding: 4px 0;
     font-size: 14px;
@@ -562,12 +562,12 @@ body {
 
 /* Precio */
 
-.Card_compra_precio {
+.price-section {
     width: 100%;
     margin: 10px 0;
 }
 
-.Card_precio_actual {
+.current-price {
     font-size: 32px;
     font-weight: 700;
     color: #111;
@@ -575,12 +575,12 @@ body {
 
 /* Botón de compra */
 
-.Card_compra_boton {
+.buy-button-container {
     width: 100%;
     margin: 5px 0;
 }
 
-.Card_btn_compra {
+.buy-button {
     width: 100%;
     padding: 14px 0;
     background-color: var(--color-primary);
@@ -599,17 +599,17 @@ body {
     gap: 8px;
 }
 
-.Card_btn_compra:hover {
+.buy-button:hover {
     background-color: var(--color-primary-hover);
 }
 
-.Card_btn_compra img {
+.buy-button img {
     filter: brightness(0) invert(1);
     width: 20px;
     height: 20px;
 }
 
-.Card_compra_nota {
+.purchase-note {
     font-size: 12px;
     color: #666;
     margin-top: 15px;
@@ -619,14 +619,14 @@ body {
 
 /* Ajustes de íconos según reglas */
 
-.Card_restrion_edad img {
+.age-rating img {
     height: 80%;
     width: 80%;
     max-width: 40px;
     max-height: 40px;
 }
 
-.Card_certificado img {
+.certificate img {
     height: 20px;
     width: 20px;
 }
@@ -638,7 +638,7 @@ body {
 
 /* Sección de información del juego */
 
-.Sec_informacion {
+.info-section {
     height: 700px;
     width: 100%;
     background-color: var(--color-white);
@@ -646,7 +646,7 @@ body {
     padding-top: 50px;
 }
 
-.Info_contenedor {
+.info-container {
     width: 100%;
     height: 100%;
 
@@ -659,7 +659,7 @@ body {
     padding-top: 50px;
 }
 
-.Info_texto {
+.info-text {
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -667,19 +667,19 @@ body {
     gap: 20px;
 }
 
-.Info_texto h1 {
+.info-text h1 {
     font-size: 26px;
     font-weight: 700;
 }
 
-.Info_texto p {
+.info-text p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-gray);
 }
 
-.Info_readmore {
+.read-more {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -688,38 +688,38 @@ body {
     font-weight: 600;
 }
 
-.Info_readmore img {
+.read-more img {
     width: 18px;
     height: 18px;
 }
 
-.Info_texto h4 {
+.info-text h4 {
     font-size: 12px;
     opacity: 0.6;
 }
 
-.Info_boton {
+.info-button {
     width: fit-content;
     padding: 16px 30px;
     background-color: var(--color-primary);
     border-radius: 10px;
 }
 
-.Info_boton:hover {
+.info-button:hover {
     background-color: var(--color-primary-hover);
 }
 
-.Info_boton h3 {
+.info-button h3 {
     font-size: 16px;
     color: var(--color-white);
 }
 
-.Info_imagen {
+.info-image {
     width: 50%;
     height: 350px;
 }
 
-.Info_imagen img {
+.info-image img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -727,32 +727,32 @@ body {
 
 /* Sección de tags */
 
-.Sec_tags {
+.tags-section {
     width: 100%;
     background-color: var(--color-white);
     padding: 60px var(--padding-mg-seccion);
 }
 
-.Tags_contenedor {
+.tags-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.Tags_titulo h1 {
+.tags-title h1 {
     font-size: 28px;
     font-weight: 700;
 }
 
-.Tags_lista {
+.tags-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.Tag_item {
+.tag-item {
     padding: 10px 18px;
     background-color: #e4e4e4;
     border-radius: 20px;
@@ -761,24 +761,24 @@ body {
     justify-content: center;
 }
 
-.Tag_item h3 {
+.tag-item h3 {
     font-size: 14px;
     font-weight: 900;
 }
 
-.Tag_item h3:hover {
+.tag-item h3:hover {
     color: var(--color-primary);
 }
 
 /* Sección About */
 
-.Sec_about {
+.about-section {
     width: 100%;
     background-color: var(--color-secondary);
     padding: 60px var(--padding-mg-seccion);
 }
 
-.About_contenedor {
+.about-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -788,18 +788,18 @@ body {
 
 /* Título */
 
-.About_titulo {
+.about-title {
     margin-bottom: 20px;
 }
 
-.About_titulo h1 {
+.about-title h1 {
     font-size: 28px;
     font-weight: 700;
 }
 
 /* ítem tipo tabla */
 
-.About_item {
+.about-item {
     width: 100%;
     display: flex;
     padding: 28px 0;
@@ -808,28 +808,28 @@ body {
 
 /* Quitar línea al primer ítem */
 
-.About_item:first-of-type {
+.about-item:first-of-type {
     border-top: none;
 }
 
-.About_label {
+.about-label {
     width: 32%;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.About_icon img {
+.about-icon img {
     width: 30px;
     height: 30px;
 }
 
-.About_label h3 {
+.about-label h3 {
     font-size: 15px;
     font-weight: 900;
 }
 
-.About_value {
+.about-value {
     width: 68%;
     display: flex;
     align-items: center;
@@ -837,18 +837,18 @@ body {
     flex-wrap: wrap;
 }
 
-.About_value_column {
+.about-value-column {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
 }
 
-.About_value p {
+.about-value p {
     font-size: 14px;
     font-weight: 500;
 }
 
-.About_value a {
+.about-value a {
     color: var(--color-primary);
     font-weight: 600;
     text-decoration: underline;
@@ -856,12 +856,12 @@ body {
     text-underline-offset: 6px;
 }
 
-.About_links {
+.about-links {
     display: flex;
     gap: 20px;
 }
 
-.About_small {
+.about-small {
     font-size: 12px;
     opacity: 0.9;
     line-height: 1.5;
@@ -870,29 +870,29 @@ body {
 
 /* modos de juego */
 
-.About_modes {
+.about-modes {
     display: flex;
     gap: 50px;
 }
 
-.About_mode {
+.about-mode {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
 
-.About_mode img {
+.about-mode img {
     width: 32px;
     height: 32px;
 }
 
-.About_mode h4 {
+.about-mode h4 {
     font-size: 13px;
     font-weight: 600;
 }
 
-.About_small p {
+.about-small p {
     font-size: 14px;
     font-weight: 500;
     color: var(--color-gray);
@@ -900,7 +900,7 @@ body {
 
 /* ESRB */
 
-.About_esrb {
+.about-esrb {
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -908,24 +908,24 @@ body {
     justify-content: start;
 }
 
-.About_esrb_img {
+.about-esrb-img {
     width: 45px;
     height: auto;
 }
 
-.About_esrb_text {
+.about-esrb-text {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.About_esrb_text p:first-child {
+.about-esrb-text p:first-child {
     padding-bottom: 8px;
     border-bottom: 1px solid #000;
 }
 
 
-.About_players {
+.about-players {
     width: 100%;
     padding: 50px 0;
     border-top: 1px solid #e0e0e0;
@@ -934,43 +934,43 @@ body {
     gap: 8px;
 }
 
-.About_players h3 {
+.about-players h3 {
     font-size: 15px;
     font-weight: 600;
 }
 
-.About_players p {
+.about-players p {
     font-size: 14px;
     opacity: 0.8;
 }
 
 /* cartas de los videojuegos*/
 
-.Sec_Card_Videojuegos {
+.videoGame-card-section {
     width: 100%;
     background-color: var(--color-secondary);
     padding: 80px var(--padding-mg-seccion);
 }
 
-.CardVideojuegos_contenedor {
+.videoGame-card-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.CardVideojuegos_titulo h1 {
+.videoGame-card-title h1 {
     font-size: 28px;
     font-weight: 700;
 }
 
-.CardVideojuegos_lista {
+.videoGame-card-list {
     width: 100%;
     display: flex;
     gap: 30px;
 }
 
-.CardVideojuegos_card {
+.videoGame-card {
     width: 260px;
     height: 500px;
     background-color: var(--color-white);
@@ -983,28 +983,28 @@ body {
     cursor: pointer;
 }
 
-.CardVideojuegos_card:hover h2 {
+.videoGame-card:hover h2 {
     color: var(--color-primary);
 
 }
 
-.CardVideojuegos_card:hover img {
+.videoGame-card:hover img {
     transform: scale(1.08);
 }
 
-.CardVideojuegos_img {
+.videoGame-card-img {
     width: 100%;
     height: 50%;
 }
 
-.CardVideojuegos_img img {
+.videoGame-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.CardVideojuegos_info {
+.videoGame-card-info {
     width: 100%;
     height: 50%;
 
@@ -1015,7 +1015,7 @@ body {
     align-items: start;
 }
 
-.CardVideojuegos_nom_fech {
+.videoGame-card-name-date {
     width: 100%;
     height: 50%;
 
@@ -1027,7 +1027,7 @@ body {
 }
 
 
-.CardVideojuegos_precio_like {
+.videoGame-card-price-like {
     width: 100%;
     height: 50%;
 
@@ -1038,23 +1038,17 @@ body {
     gap: 5px;
 }
 
-.CardVideojuegos_info h2 {
+.videoGame-card-info h2 {
     font-size: 16px;
     font-weight: 600;
 }
 
-.CardVideojuegos_info h4 {
+.videoGame-card-info h4 {
     font-size: 13px;
     opacity: 0.6;
 }
 
-.CardVideojuegos_fechaOferta {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.CardVideojuegos_sale {
+.videoGame-card-sale {
     background-color: var(--color-primary);
     color: var(--color-white);
     width: fit-content;
@@ -1064,24 +1058,24 @@ body {
     font-weight: 600;
 }
 
-.CardVideojuegos_precio {
+.videoGame-card-price {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.CardVideojuegos_precio h3 {
+.videoGame-card-price h3 {
     font-size: 16px;
     font-weight: 700;
 }
 
-.CardVideojuegos_precio_old {
+.videoGame-card-price-old {
     text-decoration: line-through;
     font-size: 13px;
     opacity: 0.6;
 }
 
-.CardVideojuegos_descuento {
+.videoGame-card-discount {
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 3px 8px;
@@ -1090,7 +1084,7 @@ body {
     font-weight: 600;
 }
 
-.CardVideojuegos_footer {
+.videoGame-card-footer {
     width: 100%;
     margin-top: 10px;
     display: flex;
@@ -1098,25 +1092,25 @@ body {
     justify-content: space-between;
 }
 
-.CardVideojuegos_categoria {
+.videoGame-card-category {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
     gap: 6px;
 }
 
-.CardVideojuegos_categoria img,
-.CardVideojuegos_like img {
+.videoGame-card-category img,
+.videoGame-card-like img {
     width: 20px;
     height: 20px;
 }
 
-.CardVideojuegos_categoria h5 {
+.videoGame-card-category h5 {
     font-size: 13px;
     font-weight: 500;
 }
 
-.CardVideojuegos_legal {
+.videoGame-card-legal {
     width: 100%;
     margin-top: 60px;
     display: flex;
@@ -1124,7 +1118,7 @@ body {
     gap: 18px;
 }
 
-.CardVideojuegos_legal p {
+.videoGame-card-legal p {
     font-size: 12px;
     line-height: 1.6;
     color: var(--color-gray);
@@ -1133,27 +1127,27 @@ body {
 
 /* Footer */
 
-.Sec_Footer_Videojuegos {
+.video-footer-section {
     width: 100%;
     background-color: #f2f2f2;
 }
 
 /* Franja roja */
 
-.Footer_TopBar {
+.footer-top-bar {
     background-color: #e60012;
     padding: 20px 0;
     display: flex;
     justify-content: center;
 }
 
-.Footer_Logo {
+.footer-logo {
     height: 100px;
 }
 
 /* Contenedor principal */
 
-.Cont_Footer_Videojuegos {
+.footer-content {
     height: 600px;
     padding: 50px var(--padding-seccion);
     display: flex;
@@ -1163,40 +1157,40 @@ body {
 
 /* Columnas */
 
-.Footer_Columns {
+.footer-columns {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
 
-.Footer_Column {
+.footer-column {
     min-width: 180px;
     flex: 1;
 }
 
-.Foter_ColumnPares {
+.footer-column-pairs {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.Footer_Title {
+.footer-title {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
-.Footer_List {
+.footer-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.Footer_List li {
+.footer-list li {
     margin-bottom: 8px;
 }
 
-.Footer_List a{
+.footer-list a{
     text-decoration: none;
     color: #e60012;
     font-size: 14px;
@@ -1204,7 +1198,7 @@ body {
     position: relative;
 }
 
-.Footer_List a::after{
+.footer-list a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -1216,30 +1210,30 @@ body {
     transition: width 0.3s ease;
 }
 
-.Footer_List a:hover::after{
+.footer-list a:hover::after{
     width: 100%;
 }
 
 /* Redes + ESRB */
 
-.Footer_Bottom_Info {
+.footer-bottom-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Footer_Social {
+.footer-social {
     display: flex;
     gap: 20px;
 }
 
-.Footer_Icon {
+.footer-icon {
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-.Footer_ESRB_Icon {
+.footer-esrb-icon {
     width: 60px;
     height: 80px;
     cursor: pointer;
@@ -1247,13 +1241,13 @@ body {
 
 /* Barra legal */
 
-.Footer_Legal {
+.footer-legal {
     background-color: #1f1f1f;
     color: #ffffff;
     padding: 10px 12%;
 }
 
-.Cont_Footer_Legal {
+.footer-legal-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1261,20 +1255,20 @@ body {
     gap: 15px;
 }
 
-.Footer_Links{
+.footer-links{
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.Footer_Links a{
+.footer-links a{
     color: #ffffff;
     text-decoration: none;
     font-size: 13px;
     position: relative;
 }
 
-.Footer_Links a::after{
+.footer-links a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -1286,16 +1280,16 @@ body {
     transition: width 0.3s ease;
 }
 
-.Footer_Links a:hover::after{
+.footer-links a:hover::after{
     width: 100%;
 }
-.Footer_Language {
+.footer-language {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.Footer_Legal_Icon {
+.footer-legal-icon {
     height: 25px;
     width: 30px;
 

@@ -71,7 +71,7 @@ body {
     padding: 10px 20px;
 }
 
-.Cont_Header {
+.header-container {
     background-color: var(--color-indigo);
     height: auto;
     width: 100%;
@@ -81,7 +81,7 @@ body {
     align-items: center;
 }
 
-.Logo_Marca {
+.logo-brand {
     height: 100%;
     width: 15%;
     display: flex;
@@ -91,29 +91,29 @@ body {
     align-items: center;
 }
 
-.Menu {
+.menu {
     display: none;
     font-size: 26px;
     color: var(--color-secondary);
     cursor: pointer;
 }
 
-.Marca {
+.brand {
     color: var(--color-secondary);
     font-size: large;
     font: 500;
 }
 
-.Logo {
+.logo {
     height: 100%;
     width: auto;
 }
 
-.Marca:hover {
+.brand:hover {
     color: var(---color-orange);
 }
 
-.Lista {
+.nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -125,7 +125,7 @@ body {
     align-items: center;
 }
 
-.Item {
+.nav-item {
     padding: 0.75rem 10px;
     color: var(--color-secondary);
     border-radius: 6px;
@@ -134,11 +134,11 @@ body {
     cursor: pointer;
 }
 
-.Item:hover {
+.nav-item:hover {
     color: var(---color-orange);
 }
 
-.Compra_CambioMoneda {
+.currency-type {
     display: flex;
     flex-direction: row;
     padding-right: 10px;
@@ -147,7 +147,7 @@ body {
     padding-right: 30px;
 }
 
-.Item_CambioMoneda {
+.currency-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -157,7 +157,7 @@ body {
     transition: background-image 0.3s ease;
 }
 
-.Item_CambioMoneda:hover {
+.currency-item:hover {
     color: var(--color-gray)
 }
 
@@ -172,20 +172,20 @@ body {
 
 /* Hover */
 
-.Item_CambioMoneda:hover {
+.currency-item:hover {
     color: var(--color-gray);
 }
 
-.Item_CambioMoneda:hover .icon_usd {
+.currency-item:hover .icon_usd {
     background-image: url("Imagenes/drop_arrow_2.png");
 }
 
 @media (max-width: 1100px) {
 
-    .Lista .Item {
+    .nav-list .nav-item {
         display: none;
     }
-    .Menu {
+    .menu {
         display: block;
     }
     .Compra_CambioMoneda {
@@ -205,7 +205,7 @@ footer {
     gap: 30px;
 }
 
-.cont_footer {
+.footer-section {
     height: auto;
     width: 18%;
     display: inline-flex;
@@ -214,17 +214,17 @@ footer {
 
 /* estilos */
 
-.cont_footer h1,
-.cont_footer h2,
-.cont_footer h3,
-.cont_footer_suscribe h1 {
+.footer-section h1,
+.footer-section h2,
+.footer-section h3,
+.footer-subscribe h1 {
     color: var(--color-secondary);
     padding-bottom: 20px;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
-.Lista_Footer {
+.footer-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -235,7 +235,7 @@ footer {
 }
 
 
-.Item_Footer {
+.footer-item {
     color: var(--color-secondary);
     border-radius: 6px;
     transition: background-color 0.3s ease;
@@ -244,7 +244,7 @@ footer {
     cursor: pointer;
 }
 
-.Item_Footer:hover {
+.footer-item:hover {
     color: var(---color-orange);
     text-decoration: underline;
 
@@ -252,18 +252,18 @@ footer {
 
 /* contenedor formulario de suscripción */
 
-.cont_footer_suscribe {
+.footer-subscribe {
     height: auto;
     width: auto;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cont_footer_suscribe>h1 {
+.footer-subscribe>h1 {
     color: var(--color-secondary);
 }
 
-.cont_footer_suscribe>h3 {
+.footer-subscribe>h3 {
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
@@ -271,7 +271,7 @@ footer {
     font-size: 13px;
 }
 
-.cont_form_suscribe {
+.subscribe-form {
     height: 20%;
     width: auto;
     display: flex;
@@ -314,7 +314,7 @@ footer {
     color: var(--color-gray);
 }
 
-.cont_redes_sociales {
+.social-media-container {
     height: 15%;
     width: auto;
     display: flex;
@@ -358,23 +358,23 @@ footer {
     
     /* lugares designados del footer */
 
-    footer .cont_footer:nth-child(1) {
+    footer .footer-section:nth-child(1) {
         grid-area: mono;
     }
 
-    footer .cont_footer:nth-child(2) {
+    footer .footer-section:nth-child(2) {
         grid-area: quick;
     }
 
-    footer .cont_footer:nth-child(3) {
+    footer .footer-section:nth-child(3) {
         grid-area: help;
     }
 
-    footer .cont_footer:nth-child(4) {
+    footer .footer-section:nth-child(4) {
         grid-area: info;
     }
 
-    footer .cont_footer_suscribe {
+    footer .footer-subscribe {
         grid-area: sus;
     }
 
@@ -382,7 +382,7 @@ footer {
 
 /* Sección de bienvenida */
 
-.sec_bienvenida {
+.welcome-section {
     position: relative;
     height: 800px;
     width: 100%;
@@ -403,30 +403,30 @@ footer {
 
 /* Contenido */
 
-.contenido {
+.welcome-container {
     position: relative;
     text-align: center;
     color: #e6bfb4;
     z-index: 2;
 }
 
-.contenido h1 {
+.welcome-text h1 {
     font-size: 2.5rem;
     letter-spacing: 3px;
     margin-bottom: 1rem;
 }
 
-.contenido p {
+.welcome-text p {
     color: #ddd;
 }
 
-.flecha {
+.arrow {
     position: absolute;
     bottom: 25px;
     z-index: 2;
 }
 
-.icon_flecha {
+.arrow-icon {
     display: inline-block;
     width: 60px;
     height: 60px;
@@ -441,63 +441,63 @@ footer {
     transition: all 0.3s ease;
 }
 
-.icon_flecha:hover {
+.arrow-icon:hover {
     transform: scale(1.2);
 }
 
 /* /////////////////////////////////// */
 /* Sección de productos cartas y sección*/
 
-.Sec_Productos {
+.products-section {
     padding: 60px var(--padding-seccion);
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.Grupo_Pares {
+.pairs-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
-.Grupo_Terceas {
+.triples-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.Grupo_LG {
+.large-group {
     display: grid;
     grid-template-columns: 1fr;
 }
 
 
 @media (max-width: 900px) {
-    .Grupo_Pares {
+    .pairs-group {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 1100px) {
-    .Grupo_Terceas {
+    .triples-group {
         grid-template-columns: 2fr;
     }
 }
 
 @media (max-width: 900px) {
-    .Grupo_Terceas {
+    .triples-group {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 900px) {
-    .Grupo_LG {
+    .large-group {
         grid-template-columns: 1fr;
     }
 }
 
-.Card_Productos {
+.product-card {
     background: #f2f2f2;
     cursor: pointer;
 
@@ -505,7 +505,7 @@ footer {
     flex-direction: column;
 }
 
-.Cont_Imagen_Carta {
+.card-image-container {
     position: relative;
     background: var(--color-gray);
     height: 320px;
@@ -519,7 +519,7 @@ footer {
 }
 
 
-.Cont_Imagen_Carta_Lg {
+.card-image-container-lg {
     position: relative;
     background: var(--color-gray);
     height: 450px;
@@ -534,8 +534,8 @@ footer {
 }
 
 
-.Cont_Imagen_Carta img,
-.Cont_Imagen_Carta_Lg img {
+.card-image-container img,
+.card-image-container-lg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -551,7 +551,7 @@ footer {
     padding: 5px 10px;
 }
 
-.Cont_TituloEstatus_Carta {
+.card-title-status {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -560,12 +560,12 @@ footer {
 
 /* animación del precio y botón */
 
-.Precio_Boton {
+.price-button-container {
     position: relative;
     display: inline-block;
 }
 
-.precio {
+.price {
     transition: opacity 0.3s ease;
     padding: 8px 16px;
 }
@@ -593,30 +593,30 @@ footer {
     height: 30px;
 }
 
-.Precio_Boton:hover .precio {
+.price-button-container:hover .price {
     opacity: 0;
 }
 
-.Precio_Boton:hover .btn-hover {
+.price-button-container:hover .btn-hover {
     opacity: 1;
     pointer-events: auto;
 }
 
 /* Estilos de las cartas */
 
-.Cont_TituloEstatus_Carta h6 {
+.card-title-status h6 {
     color: var(--color-blue);
     font-size: medium;
     font-weight: lighter;
 }
 
-.Cont_TituloEstatus_Carta h5 {
+.card-title-status h5 {
     color: var(--color-blue);
     font-size: medium;
     font-weight: 500;
 }
 
-.Cont_TituloEstatus_Carta h4 {
+.card-title-status h4 {
     color: var(--color-primary);
     font-size: x-large;
     font-weight: bold;
@@ -625,14 +625,14 @@ footer {
 
 }
 
-.Cont_Desc_Carta {
+.card-description-container {
     padding: 15px 0;
     font-size: 14px;
 }
 
 /* Sección de anuncio */
 
-.sec_anuncio {
+.announcement-section {
     position: relative;
     height: 550px;
     width: 100%;
@@ -645,7 +645,7 @@ footer {
     overflow: hidden;
 }
 
-.overlay_anuncio {
+.announcement-overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.322);
@@ -654,19 +654,19 @@ footer {
 
 /* Contenido */
 
-.contenido_anuncio {
+.announcement-content {
     position: relative;
     text-align: center;
     color: var(--color-primary);
     z-index: 2;
 }
 
-.contenido_anuncio h1 {
+.announcement-content h1 {
     font-size: 2.5rem;
     letter-spacing: 3px;
     margin-bottom: 1rem;
 }
 
-.contenido_anuncio p {
+.announcement-content p {
     color: var(--color-indigo);
 }
