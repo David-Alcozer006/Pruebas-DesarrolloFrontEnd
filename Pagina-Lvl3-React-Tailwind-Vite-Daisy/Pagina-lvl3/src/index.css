@@ -1,0 +1,75 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "nintendo";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f5f5f5;
+  --color-base-300: #efefef;
+  --color-base-content: #434242;
+  --color-base-content-dark: #343a40;
+
+  --color-primary: #e60012;
+  --color-primary-content: #ffffff;
+
+  --color-secondary: #efefef;
+  --color-secondary-content: #434242;
+
+  --color-accent: #0b2b6b;
+  --color-accent-content: #ffffff;
+
+  --color-neutral: #434242;
+  --color-neutral-content: #ffffff;
+
+  --color-info: #d6f0fa;
+  --color-success: #16a34a;
+  --color-warning: #facc15;
+  --color-error: #dc2626;
+
+  /* bordes estilo Nintendo */
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+
+  --border: 1px;
+
+  --depth: 0;
+  --noise: 0;
+}
+
+:root {
+
+  --font-sans: "Geologica Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --padding-seccion: 15%;
+  --padding-mg-seccion: 20%;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #f0efed;
+  color: var(--color-gray);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+.divider-vertical {
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-base-content);
+  border: none;
+  align-self: stretch;
+  opacity: 0.05;
+}

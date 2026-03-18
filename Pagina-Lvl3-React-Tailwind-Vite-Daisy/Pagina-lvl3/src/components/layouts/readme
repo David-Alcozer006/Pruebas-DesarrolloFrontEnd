@@ -1,0 +1,4 @@
+/*
+Aquí va el readme de los layouts, se encarga de renderizar el header y el footer
+cosas que van en todas las paginas, como el header y el footer, y que se encarga de renderizar el contenido de cada pagina, que es lo que se le pasa como children
+*/
